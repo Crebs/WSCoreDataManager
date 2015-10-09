@@ -55,7 +55,6 @@
 		23DF0C861BC72E6C00D1EAE8 /* ModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelManager.h; sourceTree = "<group>"; };
 		23DF0C871BC72E6C00D1EAE8 /* ModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelManager.m; sourceTree = "<group>"; };
 		23DF0CA21BC7302A00D1EAE8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		23DF0CA41BC7368600D1EAE8 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
 		23DF0CAB1BC73C0100D1EAE8 /* NSFileManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Extension.h"; sourceTree = "<group>"; };
 		23DF0CAC1BC73C0100D1EAE8 /* NSFileManager+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Extension.m"; sourceTree = "<group>"; };
 		23DF0CAD1BC73C0100D1EAE8 /* NSManagedObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Extension.h"; sourceTree = "<group>"; };
@@ -89,7 +88,6 @@
 		23DF0C571BC72DF000D1EAE8 = {
 			isa = PBXGroup;
 			children = (
-				23DF0CA41BC7368600D1EAE8 /* libcommonCrypto.tbd */,
 				23DF0CA21BC7302A00D1EAE8 /* CoreData.framework */,
 				23DF0C631BC72DF000D1EAE8 /* WSCoreDataManager */,
 				23DF0C6F1BC72DF100D1EAE8 /* WSCoreDataManagerTests */,
@@ -486,6 +484,7 @@
 				23DF0C771BC72DF100D1EAE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23DF0C781BC72DF100D1EAE8 /* Build configuration list for PBXNativeTarget "WSCoreDataManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +493,7 @@
 				23DF0C7A1BC72DF100D1EAE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
