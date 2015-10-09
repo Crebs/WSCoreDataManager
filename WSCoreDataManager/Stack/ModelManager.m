@@ -10,7 +10,9 @@
 
 #import "CoreDataModelManager.h"
 #import "CoreDataSession.h"
+
 #import "NSManagedObject+Incravo.h"
+#import "NSManagedObject+Extension.h"
 
 @interface ModelManager ()
 @property (strong,nonatomic) CoreDataSession* cdSession;

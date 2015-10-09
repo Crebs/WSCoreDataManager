@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSManagedObject+Extension.h"
+
+@class NSManagedObjectContext;
+@class NSManagedObject;
 
 @interface ModelManager : NSObject
 
