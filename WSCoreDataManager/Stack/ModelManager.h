@@ -23,6 +23,16 @@
 + (BOOL)isMigrationNeeded;
 + (BOOL)migrate:(NSError *__autoreleasing *)error;
 
+/* @brief need to set the store name for core data stack to build correctly.
+ * @param name Name to give to the data store
+ */
++ (void)setDefaultStoreName:(NSString*)name;
+
+/* @brief Need to set the name of the .mom file for core data stack to build correclty
+ * @param name Name of the MOM file.
+ */
++ (void)setDefaultMOMName:(NSString*)name;
+
 - (NSArray*)findOrCreateEntity:(NSString*)entityName entityIdName:(NSString*)entityIdName entityIds:(NSArray*)entities;
 - (void)deleteEntity:(NSString*)entityName entityIdName:(NSString*)entityIdName entityIds:(NSArray*)entities;
 - (NSArray*)findDirtyEntities:(NSString*)entityName;

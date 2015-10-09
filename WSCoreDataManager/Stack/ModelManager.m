@@ -67,6 +67,15 @@
     return self.cdSession.context;
 }
 
+#pragma mark - CoreDataModelManager
++ (void)setDefaultStoreName:(NSString*)name {
+    [CoreDataModelManager setDefaultStoreName:name];
+}
+
++ (void)setDefaultMOMName:(NSString*)name{
+    [CoreDataModelManager setDefaultMOMName:name];
+}
+
 #pragma mark - Find or create
 - (NSArray*)findOrCreateEntity:(NSString*)entityName entityIdName:(NSString*)entityIdName entityIds:(NSArray*)entities {
     NSError* error = nil;
