@@ -15,5 +15,6 @@ FOUNDATION_EXPORT double WSCoreDataManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char WSCoreDataManagerVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <WSCoreDataManager/PublicHeader.h>
+#import <WSCoreDataManager/ModelManager.h>
 
 
