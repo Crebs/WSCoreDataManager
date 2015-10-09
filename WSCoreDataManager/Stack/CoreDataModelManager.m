@@ -103,17 +103,25 @@ NSString* const CoreDataStoreDidImportUbiquitousContentChanges = @"CoreDataStore
     if (_mom != nil) {
         return _mom;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:defualtMOMName withExtension:@"momd"];
+    __block NSURL *modelURL = nil;
+    [[NSBundle allBundles]  enumerateObjectsUsingBlock:^(NSBundle * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        modelURL = [obj URLForResource:defualtMOMName withExtension:@"momd"];
+        *stop = (modelURL != nil);
+    }];
     _mom = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _mom;
 }
 
 - (NSPersistentStore*)configureLocalPersistentStoreCoordinator:(NSDictionary *)options withStoreURL:(NSURL*)url {
-	__block NSError* error = nil;
+    __block NSError* error = nil;
     __block NSPersistentStore *persistentStore = nil;
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self mom]];
     [_persistentStoreCoordinator performBlockAndWait:^{
-        _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: [self mom]];
-        persistentStore = [self.persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:url options:options error:&error];
+        persistentStore = [self.persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                                        configuration:nil
+                                                                                  URL:url
+                                                                              options:options
+                                                                                error:&error];
     }];
     return persistentStore;
 }

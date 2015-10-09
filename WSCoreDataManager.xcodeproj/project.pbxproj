@@ -27,6 +27,10 @@
 		23DF0CB81BC73C0100D1EAE8 /* NSManagedObject+Incravo.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DF0CB01BC73C0100D1EAE8 /* NSManagedObject+Incravo.m */; settings = {ASSET_TAGS = (); }; };
 		23DF0CB91BC73C0100D1EAE8 /* NSString+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 23DF0CB11BC73C0100D1EAE8 /* NSString+Extension.h */; settings = {ASSET_TAGS = (); }; };
 		23DF0CBA1BC73C0100D1EAE8 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DF0CB21BC73C0100D1EAE8 /* NSString+Extension.m */; settings = {ASSET_TAGS = (); }; };
+		23DF0CCE1BC822F400D1EAE8 /* TestData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 23DF0CC41BC81CB600D1EAE8 /* TestData.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		23DF0CCF1BC8230F00D1EAE8 /* TestData.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 23DF0CC41BC81CB600D1EAE8 /* TestData.xcdatamodeld */; };
+		23DF0CDF1BC8488300D1EAE8 /* TestObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DF0CDC1BC8488300D1EAE8 /* TestObject+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		23DF0CE01BC8488300D1EAE8 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DF0CDE1BC8488300D1EAE8 /* TestObject.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,11 @@
 		23DF0CB01BC73C0100D1EAE8 /* NSManagedObject+Incravo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Incravo.m"; sourceTree = "<group>"; };
 		23DF0CB11BC73C0100D1EAE8 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		23DF0CB21BC73C0100D1EAE8 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		23DF0CC51BC81CB600D1EAE8 /* TestData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestData.xcdatamodel; sourceTree = "<group>"; };
+		23DF0CDB1BC8488300D1EAE8 /* TestObject+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TestObject+CoreDataProperties.h"; path = "../TestObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		23DF0CDC1BC8488300D1EAE8 /* TestObject+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TestObject+CoreDataProperties.m"; path = "../TestObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		23DF0CDD1BC8488300D1EAE8 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestObject.h; path = ../TestObject.h; sourceTree = "<group>"; };
+		23DF0CDE1BC8488300D1EAE8 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestObject.m; path = ../TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +127,13 @@
 		23DF0C6F1BC72DF100D1EAE8 /* WSCoreDataManagerTests */ = {
 			isa = PBXGroup;
 			children = (
+				23DF0CDB1BC8488300D1EAE8 /* TestObject+CoreDataProperties.h */,
+				23DF0CDC1BC8488300D1EAE8 /* TestObject+CoreDataProperties.m */,
+				23DF0CDD1BC8488300D1EAE8 /* TestObject.h */,
+				23DF0CDE1BC8488300D1EAE8 /* TestObject.m */,
 				23DF0C701BC72DF100D1EAE8 /* WSCoreDataManagerTests.m */,
 				23DF0C721BC72DF100D1EAE8 /* Info.plist */,
+				23DF0CC41BC81CB600D1EAE8 /* TestData.xcdatamodeld */,
 			);
 			path = WSCoreDataManagerTests;
 			sourceTree = "<group>";
@@ -275,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DF0CCF1BC8230F00D1EAE8 /* TestData.xcdatamodeld in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +316,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				23DF0C711BC72DF100D1EAE8 /* WSCoreDataManagerTests.m in Sources */,
+				23DF0CCE1BC822F400D1EAE8 /* TestData.xcdatamodeld in Sources */,
+				23DF0CE01BC8488300D1EAE8 /* TestObject.m in Sources */,
+				23DF0CDF1BC8488300D1EAE8 /* TestObject+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +514,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		23DF0CC41BC81CB600D1EAE8 /* TestData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				23DF0CC51BC81CB600D1EAE8 /* TestData.xcdatamodel */,
+			);
+			currentVersion = 23DF0CC51BC81CB600D1EAE8 /* TestData.xcdatamodel */;
+			path = TestData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 23DF0C581BC72DF000D1EAE8 /* Project object */;
 }
